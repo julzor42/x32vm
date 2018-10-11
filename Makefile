@@ -1,7 +1,7 @@
 NAME=pvm
 SRC=$(wildcard src/*.c)
 OBJ=$(patsubst %.c,%.o,$(SRC))
-CFLAGS=`sdl2-config --cflags` -O3
+CFLAGS=`sdl2-config --cflags` -O3 -DUSE_GUI
 LDFLAGS=`sdl2-config --libs` -O3
 
 CC=gcc
